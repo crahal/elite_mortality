@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/crahal/elitemortality/blob/master/compile/figures/William%2C_2nd_Earl_of_Craven_1809-66_by_GH.jpg" width="550"/>
+  <img src="https://github.com/crahal/elitemortality/blob/master/compile/figures/William%2C_2nd_Earl_of_Craven_1809-66_by_GH.jpg" width="200"/>
 </p>
 
 # elitemortality
