@@ -247,6 +247,7 @@ def main():
     for item in df['child'].str.split(';'):
         if item is not np.nan:
             for child in item:
+                # this is wrong, it should be if in peers.index, i think
                 if int(child) in df.index:
                     df.loc[int(child), 'is_child_of_peer'] = 1
                     if df.loc[int(child), 'child'] is not np.nan:
@@ -286,9 +287,8 @@ def main():
     df['died_datetime_str'] = df['died_datetime'].apply(lambda x: x.strftime('%d-%m-%Y') if pd.notnull(x) else np.nan)
 
     print(f"We end with {len(df)} rows of the df")
-    print(f"Saving out to ../data/wrangled/wrangled_peerage.csv")
-    df.to_csv('../data/wrangled/wrangled_peerage.csv')
-
+    print(f"Saving out to ../data/thepeerage/wrangled/wrangled_peerage.csv")
+    df.to_csv('../data/thepeerage/wrangled/wrangled_peerage.csv')
 
 
 if __name__ == "__main__":
