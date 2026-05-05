@@ -1,0 +1,19 @@
+# Keep project source code tracked.
+!src/
+!src/**
+
+# Archived project copy.
+old_version/
+
+# Generated pipeline outputs.
+data/
+logging/
+
+# Python/runtime artifacts.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local editor state.
+.idea/
+
